@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duplay streaming platform</title>
+  <!-- favicon link -->
+  <link rel="icon" type="image/png" href="logo/dp-i-c.png">
+  <!-- css link -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- javascript link -->
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+  <div class="hero">
+    <img src="logo/dp-i-c.png" alt="hero icon">
+  </div>
+
+  <header>
+    <nav class="top-nav">
+      <img class="logo" src="logo/dp-w-c.png" alt="Duplay logo">
+      <div>
+        <button class="genre" onclick="displayGenre()" >Genre</button>
+        <div  id="genreM" class="genreM">
+          <button onclick="Pop()" >Pop</button><br>
+          <button onclick="HipHop_Rap()" >Hip Hop/Rap</button><br>
+          <button onclick="Electronics_Dance()" >Electronics/Dance</button><br>
+          <button onclick="Gospel()" >Gospel</button>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="down-nav">
+      <a href="#audioSec">Audio</a>
+      <a href="#lyricsSec">Lyrics</a>
+      <a href="#videoSec">Video</a>
+    </nav>
+  </header>
+
+  <div class="mainWrapper">
+  <div class="lineBreak"></div>
+  </div>
+
+  <main>
+    <div class="mainWrapper">
+    <h2 id="genreName">Pop</h2>
+    </div>
+
+    <section class="info">
+      <div class="mainWrapper">
+        <img id="albumArt" class="albumArtBig" src="image/album cover/Shape_Of_You_(Official_Single_Cover)_by_Ed_Sheeran.png" alt="album art">
+      </div>
+
+      <div class="mainWrapper2">
+        <div class="artistInfo">
+          <h4 id="songName">Shape Of You</h4>
+          <a id="artistName" target="_blank" href="#">Ed Sheeran</a>
+        </div>
+        <div class="subscribe">
+          <button type="button" id="subscription" onclick="subscription()">Unsubscribed</button>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="audioSec" class="audioSection">
+      <img id="albumArt2" src="image/album cover/Shape_Of_You_(Official_Single_Cover)_by_Ed_Sheeran.png" alt="album art">
+      <audio id="songAudio" controls>
+        <source src="audio/Ed_Sheeran_-_Shape_Of_You.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+
+    <section id="lyricsSec" class="lyricsSection">
+      <h3>Lyrics</h3>
+      <div class="lyricsPic">
+        <pre id="lyricsText">The club isn't the best place to find a lover
+So the bar is where I go
+Me and my friends at the table doing shots
+Drinking fast and then we talk slow
+Come over and start up a conversation with just me
+And trust me I'll give it a chance now
+Take my hand, stop, put Van the Man on the jukebox
+And then we start to dance, and now I'm singing like
+
+Girl, you know I want your love
+Your love was handmade for somebody like me
+Come on now, follow my lead
+I may be crazy, don't mind me
+Say, boy, let's not talk too much
+Grab on my waist and put that body on me
+Come on now, follow my lead
+Come, come on now, follow my lead
+
+I'm in love with the shape of you
+We push and pull like a magnet do
+Although my heart is falling too
+I'm in love with your body
+And last night you were in my room
+And now my bedsheets smell like you
+Every day discovering something brand new
+I'm in love with your body
+(Oh-I-oh-I-oh-I-oh-I)
+I'm in love with your body
+(Oh-I-oh-I-oh-I-oh-I)
+I'm in love with your body
+(Oh-I-oh-I-oh-I-oh-I)
+I'm in love with your body
+Every day discovering something brand new
+I'm in love with the shape of you
+
+One week in we let the story begin
+We're going out on our first date
+You and me are thrifty, so go all you can eat
+Fill up your bag and I fill up a plate
+We talk for hours and hours about the sweet and the sour
+And how your family is doing okay
+And leave and get in a taxi, then kiss in the backseat
+Tell the driver make the radio play, and I'm singing like
+
+Girl, you know I want your love
+Your love was handmade for somebody like me
+Come on now, follow my lead
+I may be crazy, don't mind me
+Say, boy, let's not talk too much
+Grab on my waist and put that body on me
+Come on now, follow my lead
+Come, come on now, follow my lead
+
+I'm in love with the shape of you
+We push and pull like a magnet do
+Although my heart is falling too
+I'm in love with your body
+And last night you were in my room
+And now my bedsheets smell like you
+Every day discovering something brand new
+I'm in love with your body
+(Oh-I-oh-I-oh-I-oh-I)
+I'm in love with your body
+(Oh-I-oh-I-oh-I-oh-I)
+I'm in love with your body
+(Oh-I-oh-I-oh-I-oh-I)
+I'm in love with your body
+Every day discovering something brand new
+I'm in love with the shape of you
+
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+Come on, be my baby, come on
+
+I'm in love with the shape of you
+We push and pull like a magnet do
+Although my heart is falling too
+I'm in love with your body
+And last night you were in my room
+And now my bedsheets smell like you
+Every day discovering something brand new
+I'm in love with your body
+Come on, be my baby, come on
+Come on (I'm in love with your body), be my baby, come on
+Come on, be my baby, come on
+Come on (I'm in love with your body), be my baby, come on
+Come on, be my baby, come on
+Come on (I'm in love with your body), be my baby, come on
+Every day discovering something brand new
+I'm in love with the shape of you</pre>
+        <div class="lyricsPicImg">
+          <img id="artistPic1" src="image/artist/ed sheeran artist pic.jpg" alt="artist pic">
+          <img id="artistPic2" src="image/artist/ed sheeran artist pic 2.jpg" alt="artist pic">
+        </div>
+      </div>
+      <a id="lyricsVideoLink" target="_blank" href="https://www.youtube.com/watch?v=VwomfkFDvH4">Lyrics video</a>
+    </section>
+
+
+    <section id="videoSec" class="videoSelection">
+      <video id="songVideo" controls>
+        <source  src="video/Ed Sheeran - Shape Of You [Official Lyric Video].mp4 " type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+      <a id="songVideoLink" target="_blank" href="https://youtu.be/_dK2tDK9grQ?si=IFQeVvxJVy-X7PVZ">Watch on Youtube</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="author">
+      <p>Author</p>
+      <img src="logo/dg-l-c.png" alt="author's logo">
+    </div>
+    <div class="text">
+      <p>Hard work fuels the journey to success, turning aspirations into achievements. It's the sweat that transforms dreams into reality...</p>
+    </div>
+  </footer>
